@@ -3,7 +3,6 @@ import './App.css'
 import Die from './component/Die'
 
 function App() {
-  
   const allNewDice = () => {
     const newDice = []
     for (let i = 0; i < 10; i++) {
@@ -15,9 +14,20 @@ function App() {
 
   const diceElements = dice.map((die) => <Die value={die} />)
 
+  const getNewDice = () => {
+   setDice(allNewDice())
+   console.log('did it')
+  }
+
   return (
     <main>
       <div className='diceContainer'>{diceElements}</div>
+      <button 
+      type='button' 
+      onClick={getNewDice}
+      className='rollButton'>
+        Roll
+      </button>
     </main>
   )
 }

@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: #0b2434;
   padding: 2rem;
+  height: full;
 }
 
 main {
@@ -13,7 +14,8 @@ main {
   height: 500px;
   max-width: 500px;
   border-radius: 5px;
-  padding: 20px;
+  margin: auto;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +26,7 @@ main {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 30px;
+  position: relative;
 }
 
 .dieFace {
@@ -38,7 +41,25 @@ main {
   background-color: white;
 }
 
-.dieNum{
+.dieNum {
   margin: auto;
   font-size: 2rem;
+}
+
+.rollButton {
+  background-color: #5035ff;
+  width: 92.16px;
+  height: 2.5rem;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
 }
