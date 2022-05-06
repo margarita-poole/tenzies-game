@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-color: #0b2434;
+  font-family: 'Karla', sans-serif;
 }
 
 #root {
@@ -20,9 +21,21 @@ main {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
 }
 
 .diceContainer {
@@ -30,6 +43,7 @@ main {
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .dieFace {
@@ -41,7 +55,6 @@ main {
   justify-items: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
 }
 
 .dieNum {
@@ -51,18 +64,21 @@ main {
 
 .rollButton {
   background-color: #5035ff;
-  width: 92.16px;
-  height: 2.5rem;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
   color: #ffffff;
+  font-size: 1.3rem;
+  font-family: 'Karla', sans-serif;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.rollButton:focus {
+  outline: none;
+}
+
+.rollButton:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
