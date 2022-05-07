@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: #0b2434;
   font-family: 'Karla', sans-serif;
+  z-index: 0;
 }
 
 #root {
@@ -24,6 +25,7 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
+  z-index: 1;
 }
 
 .title {
@@ -64,7 +66,7 @@ main {
 
 .rollButton {
   background-color: #5035ff;
-  width: 100px;
+  width: 150px;
   height: 50px;
   border: none;
   border-radius: 6px;
@@ -81,4 +83,25 @@ main {
 
 .rollButton:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.rollTracker {
+  font-size: 22px;
+  color: black;
+}
+
+.rollTracker > p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.congrats {
+  font-size: 28px;
+}
+
+.count{
+  color:#3fa066; 
+  margin: 0 8px;
+  font-size: 28px;
 }
